@@ -10,7 +10,6 @@ var bg ;
 var time = 0;
 
 function preload() {
-    // create getBackgroundImg( ) here
      getBackground()
 }
 
@@ -23,12 +22,8 @@ function setup(){
 
 function draw(){
 
-    // add condition to check if any background image is there to add
     if(backgroundImg){
-           // write code to display time in correct format here
-       // fill("blue")
-      //  textSize(20);
-        //text ("time : " + time, 990,40)
+        background(backgroundImg);
     }
        function time(){
             if(this.time<0 && this.time>-1005){
